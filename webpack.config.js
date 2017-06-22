@@ -59,7 +59,10 @@ function getBaseConfig () {
         }, {
           test: /\.vue(\?[^?]+)?$/,
           loaders: []
-        }
+        },{
+              test: /\.css$/,
+              loader: 'style!css?modules!postcss'
+          }
       ]
     },
     vue: {
